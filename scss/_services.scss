@@ -1,0 +1,71 @@
+.services{
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    section{
+        width:50%;
+        
+    }
+
+}
+
+.sticky{
+    gap:1vw;
+    padding:1vw;
+    h1{
+        font-size:8vw;
+    }
+    div{
+        a{
+            padding:1vw;
+            border:1px solid var(--darkgray);
+            &:nth-child(1){
+                background: var(--darkgray) ;
+                color: var(--cream);
+            }
+            &:nth-child(2){
+                background: transparent;
+                color:var(--darkgray);
+            }
+        }
+
+
+    }
+
+    img{
+
+    }
+}
+
+.fluid{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    padding:1vw;
+   h1{
+    font-size:3vw;
+    text-align: left;
+   }
+    .module{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        section{
+            display:flex;
+            width:100%;
+            img{
+                width:45%;
+            }
+        }
+       
+        div{
+            h2{
+                font-size:2vw;
+            }
+            p{
+
+            }
+        }
+    }
+}
+

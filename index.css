@@ -1,3 +1,256 @@
 body {
+  overflow-X: hidden;
+  background-color: var(--cream);
+}
+
+* {
+  margin: 0 auto;
+  font-family: title;
+}
+
+p {
+  font-family: regular;
+}
+
+h1 {
+  font-family: bold;
+}
+
+a {
+  font-family: regular;
+  text-decoration: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  position: relative;
+}
+.about div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+}
+.about div:nth-child(1) {
+  width: 65%;
+}
+.about div:nth-child(2) {
+  width: 45%;
+}
+.about div article {
+  padding: 7vw;
+}
+.about div article h1 {
+  font-size: 3vw;
+}
+.about div article p {
+  font-size: 2vw;
+}
+.about div section {
+  background: url("../media/aboutimage.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: -moz-hidden-unscrollable;
+}
+.about div section img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.about div section img:hover {
+  opacity: 0.7;
+  width: 120%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--darkgray);
+  padding: 4vw;
+}
+.footer div {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+}
+.footer div h3 {
+  color: var(--cream);
+  font-family: bold !important;
+}
+.footer div a {
+  color: var(--cream);
+  padding: 0.6vw 0;
+  padding-left: 0;
+  transition: 0.2s;
+  padding-right: 1vw;
+}
+.footer div a:hover {
+  padding-left: 2vw;
+  background-color: var(--cream);
+  border-radius: 100vw;
+  color: var(--darkgray);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 52vw;
+  background: url(../media/heroimage.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero div {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  margin-bottom: 4vw;
+}
+.hero div h1 {
+  font-size: 5vw;
+  color: var(--cream);
+}
+.hero div h2 {
+  color: var(--cream);
+  font-size: 2vw;
+}
+
+:root {
+  --cream: #EBEBE2;
+  --darkgray: #263743;
+}
+
+@font-face {
+  font-family: regular;
+  src: url("../fonts/poppins.ttf");
+}
+@font-face {
+  font-family: title;
+  src: url("../fonts/sportingreg.otf");
+}
+@font-face {
+  font-family: bold;
+  src: url("../fonts/sportingbold.otf");
+}
+.slide {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  position: relative;
+  animation: 10s slide infinite linear;
+  background-color: var(--darkgray);
+  color: var(--cream);
+  padding-top: 0.5vw;
+  left: 0;
+}
+.slide div {
+  display: flex;
+  gap: 2vw;
+  flex-direction: row;
+}
+
+@keyframes slide {
+  0% {
+    left: 0vw;
+  }
+  100% {
+    left: -100vw;
+  }
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30vw;
+  align-items: center;
+}
+.nav img {
+  height: 5vw;
+}
+.nav section {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.nav section a {
+  color: var(--cream);
+}
+.nav section a:hover {
+  color: var(--cream);
+  background-color: var(--darkgray);
+}
+.nav button {
+  background-color: var(--cream);
+  color: var(--darkgray);
+  border-radius: 50vw;
+  border: none;
+  font-size: 1vw;
+  padding: 1vw;
+  transition: 0.2s all;
+}
+.nav button:hover {
+  color: var(--cream);
+  background-color: var(--darkgray);
+  cursor: pointer;
+}
+
+.services {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.services section {
+  width: 50%;
+}
+
+.sticky {
+  gap: 1vw;
+  padding: 1vw;
+}
+.sticky h1 {
+  font-size: 8vw;
+}
+.sticky div a {
+  padding: 1vw;
+  border: 1px solid var(--darkgray);
+}
+.sticky div a:nth-child(1) {
+  background: var(--darkgray);
+  color: var(--cream);
+}
+.sticky div a:nth-child(2) {
+  background: transparent;
+  color: var(--darkgray);
+}
+.fluid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1vw;
+}
+.fluid h1 {
+  font-size: 3vw;
+  text-align: left;
+}
+.fluid .module {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.fluid .module section {
+  display: flex;
+  width: 100%;
+}
+.fluid .module section img {
+  width: 45%;
+}
+.fluid .module div h2 {
+  font-size: 2vw;
 }/*# sourceMappingURL=index.css.map */

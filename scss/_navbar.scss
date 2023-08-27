@@ -1,0 +1,37 @@
+.nav{
+    display:flex;
+    flex-direction: row;
+    gap:30vw;
+    align-items: center;
+    img{
+        height:5vw;
+    }
+    section{
+        display:flex;
+        flex-direction:row;
+        gap:1vw;
+        
+        a{
+            color:var(--cream);
+            &:hover{
+                color:var(--cream);
+                background-color: var(--darkgray);
+            }
+        }
+    }
+
+    button{
+        background-color: var(--cream);
+        color:var(--darkgray);
+        border-radius:50vw;
+        border:none;
+        font-size:1vw;
+        padding:1vw;
+        transition:.2s all;
+        &:hover{
+            color:var(--cream);
+            background-color: var(--darkgray);
+            cursor:pointer;
+        }
+    }
+}
