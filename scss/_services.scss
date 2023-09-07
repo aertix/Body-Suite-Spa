@@ -1,71 +1,97 @@
-.services{
-    width:100vw;
-    display:flex;
+.services {
+    width: 100vw;
+    display: flex;
     flex-direction: row;
-    section{
-        width:50%;
-        
-    }
+
+
 
 }
 
-.sticky{
-    gap:1vw;
-    padding:1vw;
-    h1{
-        font-size:8vw;
+
+.sticky {
+    gap: 1vw;
+    padding: 1vw;
+    width: 50%;
+    position: fixed;
+
+    h1 {
+        font-size: 6vw;
     }
-    div{
-        a{
-            padding:1vw;
-            border:1px solid var(--darkgray);
-            &:nth-child(1){
-                background: var(--darkgray) ;
+
+    div {
+        a {
+            padding: 1vw;
+            border: 1px solid var(--darkgray);
+
+            &:nth-child(1) {
+                background: var(--darkgray);
                 color: var(--cream);
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 background: transparent;
-                color:var(--darkgray);
+                color: var(--darkgray);
             }
         }
 
 
     }
 
-    img{
-
-    }
+    img {}
 }
 
-.fluid{
-    display:flex;
+.fluid {
+    display: flex;
     flex-direction: column;
-    width:100%;
-    padding:1vw;
-   h1{
-    font-size:3vw;
-    text-align: left;
-   }
-    .module{
-        display:flex;
+    width: 60%;
+    margin-left: 40%;
+    padding: 1vw;
+    justify-content: start;
+
+    h1 {
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    .module {
+        display: flex;
         flex-direction: column;
-        width:100%;
-        section{
-            display:flex;
-            width:100%;
-            img{
-                width:45%;
+        width: 100%;
+
+        h1 {
+            width: 100%;
+        }
+
+        section {
+            display: flex;
+            width: 100%;
+            gap: 3vw;
+
+            img {
+                width: 47%;
+                margin: 0;
+                margin-bottom: 1vw;
+                border: .5px solid black;
             }
         }
-       
-        div{
-            h2{
-                font-size:2vw;
-            }
-            p{
 
+        div {
+            width: 100%;
+
+
+            h2 {
+                font-size: 1vw;
+            }
+
+            p {
+                font-size: .7vw;
             }
         }
     }
 }
 
+hr {
+    width: 100%;
+    margin-bottom: 1vw;
+    margin-top: .5vw;
+}

@@ -169,6 +169,7 @@ a {
   display: flex;
   flex-direction: row;
   gap: 30vw;
+  background-color: var(--darkd);
   align-items: center;
 }
 .nav img {
@@ -206,16 +207,15 @@ a {
   display: flex;
   flex-direction: row;
 }
-.services section {
-  width: 50%;
-}
 
 .sticky {
   gap: 1vw;
   padding: 1vw;
+  width: 50%;
+  position: fixed;
 }
 .sticky h1 {
-  font-size: 8vw;
+  font-size: 6vw;
 }
 .sticky div a {
   padding: 1vw;
@@ -232,8 +232,10 @@ a {
 .fluid {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 60%;
+  margin-left: 40%;
   padding: 1vw;
+  justify-content: start;
 }
 .fluid h1 {
   font-size: 3vw;
@@ -244,13 +246,32 @@ a {
   flex-direction: column;
   width: 100%;
 }
+.fluid .module h1 {
+  width: 100%;
+}
 .fluid .module section {
   display: flex;
   width: 100%;
+  gap: 3vw;
 }
 .fluid .module section img {
-  width: 45%;
+  width: 47%;
+  margin: 0;
+  margin-bottom: 1vw;
+  border: 0.5px solid black;
+}
+.fluid .module div {
+  width: 100%;
 }
 .fluid .module div h2 {
-  font-size: 2vw;
+  font-size: 1vw;
+}
+.fluid .module div p {
+  font-size: 0.7vw;
+}
+
+hr {
+  width: 100%;
+  margin-bottom: 1vw;
+  margin-top: 0.5vw;
 }/*# sourceMappingURL=index.css.map */
