@@ -1,0 +1,65 @@
+//NAVBAR ANIMATIONS
+//NAVBAR ANIMATIONS
+
+//BUTTON
+.leftTurn {
+    animation: .5s leftTurn forwards;
+}
+
+.rightTurn {
+    animation: .5s rightTurn forwards;
+}
+
+@keyframes rightTurn {
+    0% {
+        transform: rotate(0deg);
+        filter: invert(0);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+        filter: invert(180);
+    }
+}
+
+@keyframes leftTurn {
+    0% {
+        transform: rotate(-90deg);
+        filter: invert(180);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        filter: invert(0);
+    }
+}
+
+//DROPDOWN
+
+.appear {
+    animation: .5s appear forwards;
+}
+
+.disappear {
+    animation: .5s disappear forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

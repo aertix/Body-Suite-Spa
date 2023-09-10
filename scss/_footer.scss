@@ -1,28 +1,36 @@
-.footer{
-    display:flex;
+.footer {
+    display: flex;
     flex-direction: row;
     background-color: var(--darkgray);
-    padding: 4vw;
-    div{
-        width:25vw;
-        display:flex;
-        flex-direction:column;
-        h3{
-            color:var(--cream);
-            font-family:bold !important;
+    padding: 2vw;
+    color: var(--cream);
+
+    div {
+        width: 16vw;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            margin: 0;
+            color: var(--cream);
+            font-family: bold !important;
         }
-        a{
-            color:var(--cream);
-            padding:.6vw 0;
-            padding-left:0;
-            transition:.2s;
-            padding-right:1vw;
-            &:hover{
+
+        a {
+            color: var(--cream);
+            padding: .6vw 0;
+            padding-left: 0;
+            transition: .2s;
+            padding-right: 1vw;
+            margin: 0;
+            font-size: 1vw;
+
+            &:hover {
                 padding-left: 2vw;
                 background-color: var(--cream);
-                border-radius:100vw;
+                border-radius: 100vw;
 
-                color:var(--darkgray);
+                color: var(--darkgray);
             }
         }
     }

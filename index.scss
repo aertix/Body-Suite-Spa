@@ -1,25 +1,27 @@
-
-
-body{
-    overflow-X:hidden;
+body {
+    overflow-X: hidden;
     background-color: var(--cream);
 }
 
-*{
+html {
+    scroll-behavior: smooth;
+}
+
+* {
     margin: 0 auto;
-    font-family:title;
+    font-family: title;
 }
 
-p{
-    font-family:regular;
+p {
+    font-family: regular;
 }
 
-h1{
-    font-family:bold;
+h1 {
+    font-family: bold;
 }
 
-a{
-    font-family:regular;
+a {
+    font-family: regular;
     text-decoration: none;
 }
 
@@ -30,3 +32,4 @@ a{
 @import 'scss/slide';
 @import 'scss/navbar';
 @import 'scss/services';
+@import 'scss/animations';
