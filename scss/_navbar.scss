@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     flex-direction: row;
-    gap: 22vw;
+    gap: 13vw;
     align-items: center;
     background-color: var(--darkgray);
     width: 100vw;
@@ -9,6 +9,7 @@
 
 
     img {
+        margin-right: 18vw;
         height: 3vw;
 
     }

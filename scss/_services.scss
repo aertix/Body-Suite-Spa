@@ -3,7 +3,13 @@
     display: flex;
     flex-direction: row;
 
+    hr {
+        width: 10%;
 
+        margin: 0;
+        margin-bottom: 1vw;
+        margin-top: .5vw;
+    }
 
 }
 
@@ -35,6 +41,31 @@
         }
 
 
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10vw;
+        z-index: -5;
+
+        a {
+            color: black;
+            margin: 0;
+            padding: .2vw;
+            width: 10vw;
+            padding-left: .5vw;
+
+
+            &:hover {
+                background-color: black;
+                border-radius: 2vw;
+                color: white;
+
+            }
+
+            font-size: 1vw;
+        }
     }
 
     img {}
@@ -88,12 +119,4 @@
             }
         }
     }
-}
-
-hr {
-    width: 10%;
-
-    margin: 0;
-    margin-bottom: 1vw;
-    margin-top: .5vw;
 }

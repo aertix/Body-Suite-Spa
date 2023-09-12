@@ -80,6 +80,8 @@ a {
   background-color: var(--darkgray);
   padding: 2vw;
   color: var(--cream);
+  z-index: 100;
+  position: relative;
 }
 .footer div {
   width: 16vw;
@@ -176,13 +178,14 @@ a {
 .nav {
   display: flex;
   flex-direction: row;
-  gap: 22vw;
+  gap: 13vw;
   align-items: center;
   background-color: var(--darkgray);
   width: 100vw;
   padding: 1vw 0;
 }
 .nav img {
+  margin-right: 18vw;
   height: 3vw;
 }
 .nav section {
@@ -298,6 +301,12 @@ a {
   display: flex;
   flex-direction: row;
 }
+.services hr {
+  width: 10%;
+  margin: 0;
+  margin-bottom: 1vw;
+  margin-top: 0.5vw;
+}
 
 .sticky {
   gap: 1vw;
@@ -319,6 +328,25 @@ a {
 .sticky div a:nth-child(2) {
   background: transparent;
   color: var(--darkgray);
+}
+.sticky aside {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vw;
+  z-index: -5;
+}
+.sticky aside a {
+  color: black;
+  margin: 0;
+  padding: 0.2vw;
+  width: 10vw;
+  padding-left: 0.5vw;
+  font-size: 1vw;
+}
+.sticky aside a:hover {
+  background-color: black;
+  border-radius: 2vw;
+  color: white;
 }
 .fluid {
   display: flex;
@@ -361,9 +389,42 @@ a {
   font-size: 1vw;
 }
 
-hr {
-  width: 10%;
-  margin: 0;
+.balancerpro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  padding: 2vw;
+  gap: 2vw;
+  align-items: center;
+}
+.balancerpro h1 {
+  font-size: 4vw;
+}
+.balancerpro img {
+  height: 20vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 0.1vw;
+}
+.balancerpro p {
+  width: 50%;
+  font-size: 1.43vw;
+  display: block;
+  padding: 0 10vw;
+  text-align: center;
+}
+.balancerpro ul {
+  width: 50%;
+  display: block;
+  padding: 0 10vw;
+}
+.balancerpro ul li {
+  font-size: 1vw;
+  list-style: none;
+  text-align: center;
+}
+.balancerpro hr {
+  width: 50%;
   margin-bottom: 1vw;
   margin-top: 0.5vw;
 }
@@ -419,4 +480,29 @@ hr {
   100% {
     opacity: 0;
   }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5vw;
+  background-color: var(--cream);
+  padding: 0.1vw;
+}
+
+html::-webkit-scrollbar-track {
+  border-bottom-left-radius: 100vw;
+  border-bottom-right-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--darkgray);
+  border-bottom-left-radius: 100vw;
+  border-bottom-right-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+  border: 1px solid black;
 }/*# sourceMappingURL=index.css.map */

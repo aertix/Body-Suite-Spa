@@ -4,6 +4,8 @@
     background-color: var(--darkgray);
     padding: 2vw;
     color: var(--cream);
+    z-index: 100;
+    position: relative;
 
     div {
         width: 16vw;

@@ -1,0 +1,48 @@
+.balancerpro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding: 2vw;
+    gap: 2vw;
+    align-items: center;
+
+    h1 {
+        font-size: 4vw;
+
+    }
+
+    img {
+        height: 20vw;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        border-radius: .1vw;
+    }
+
+    p {
+        width: 50%;
+        font-size: 1.43vw;
+        display: block;
+        padding: 0 10vw;
+        text-align: center;
+    }
+
+    ul {
+        width: 50%;
+        display: block;
+        padding: 0 10vw;
+
+        li {
+            font-size: 1vw;
+            list-style: none;
+            text-align: center;
+        }
+    }
+
+    hr {
+        width: 50%;
+
+
+        margin-bottom: 1vw;
+        margin-top: .5vw;
+    }
+}
