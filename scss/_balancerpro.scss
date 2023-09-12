@@ -46,3 +46,55 @@
         margin-top: .5vw;
     }
 }
+
+@media(max-width:500px) {
+    .balancerpro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        padding: 0vw;
+        gap: 2vw;
+        text-align: center;
+        align-items: center;
+
+        h1 {
+            font-size: 8vw;
+            text-align: center;
+        }
+
+        img {
+            height: 40vw;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+            border-radius: .1vw;
+        }
+
+        p {
+            width: 100%;
+            font-size: 3.43vw;
+            display: block;
+            padding: 0 0vw;
+            text-align: center;
+        }
+
+        ul {
+            width: 100%;
+            display: block;
+            padding: 0 0vw;
+
+            li {
+                font-size: 3.43vw;
+                list-style: none;
+                text-align: center;
+            }
+        }
+
+        hr {
+            width: 100%;
+
+
+            margin-bottom: 1vw;
+            margin-top: .5vw;
+        }
+    }
+}
