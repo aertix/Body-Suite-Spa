@@ -148,21 +148,88 @@
     }
 }
 
+.mobilenav{
+    display:none;
+}
+
+@keyframes appear{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes disappear{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
 @media(max-width:500px) {
+   
+    .mobilenav{
+        display:flex;
+        flex-direction:column;
+        width:100vw;
+        padding: 10vw 0;
+        background-color: var(--darkgray);
+        z-index:2;
+        display:none;
+        img{
+     
+            height:10vw;
+            position:absolute;
+            filter:invert(180);
+        }
+        a{
+            text-decoration: none;
+            color:var(--cream);
+            font-size:6vw;
+            &:active{
+                text-decoration: underline;
+            }
+        }
+        button{
+            background-color: var(--cream);
+            border-radius: 8vw;
+            margin-top:2vw;
+            h1{
+                color:var(--darkgray);
+                font-size:9vw;
+            }
+        }
+
+        
+    }
+    .mobilebutton{
+        position:absolute;
+        top:3vw;
+        right:3vw;
+        filter:invert(180);
+        height:5vw;
+    }
     .nav {
         display: flex;
         flex-direction: row;
+       
         gap: 1vw;
         align-items: center;
         background-color: var(--darkgray);
         width: 100vw;
+        min-height:12vw;
         padding: 1vw 0;
-
+ 
 
         img {
             margin-right: 0vw;
             height: 10vw;
-
+            position:absolute;top:2vw;
+            left:2vw;
         }
 
         section {
@@ -174,29 +241,15 @@
             height: 4vw;
 
             a {
+                display: none;
                 color: var(--cream);
                 font-size: 3.2vw;
                 position: relative;
                 transition: .2s all;
 
-                &:after {
-                    content: '';
-                    width: 0%;
-                    background-color: black;
-                    position: absolute;
-                    top: 6.3vw;
-                    left: 0;
-                    height: .1vw;
-                    transition: .2s all;
-                }
+               
 
-                &:hover {
-                    color: var(--cream);
-
-                    &:after {
-                        width: 90%;
-                    }
-                }
+                
             }
         }
 
@@ -210,15 +263,7 @@
             margin-right: 12vw;
 
             img {
-                height: 7vw;
-                transition: .2s all;
-                filter: invert(180);
-
-                &:hover {
-                    cursor: pointer;
-                    filter: invert(0);
-
-                }
+                display:none;
 
             }
         }

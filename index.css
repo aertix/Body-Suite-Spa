@@ -405,7 +405,65 @@ a {
     left: -8vw;
   }
 }
+.mobilenav {
+  display: none;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media (max-width: 500px) {
+  .mobilenav {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 10vw 0;
+    background-color: var(--darkgray);
+    z-index: 2;
+    display: none;
+  }
+  .mobilenav img {
+    height: 10vw;
+    position: absolute;
+    filter: invert(180);
+  }
+  .mobilenav a {
+    text-decoration: none;
+    color: var(--cream);
+    font-size: 6vw;
+  }
+  .mobilenav a:active {
+    text-decoration: underline;
+  }
+  .mobilenav button {
+    background-color: var(--cream);
+    border-radius: 8vw;
+    margin-top: 2vw;
+  }
+  .mobilenav button h1 {
+    color: var(--darkgray);
+    font-size: 9vw;
+  }
+  .mobilebutton {
+    position: absolute;
+    top: 3vw;
+    right: 3vw;
+    filter: invert(180);
+    height: 5vw;
+  }
   .nav {
     display: flex;
     flex-direction: row;
@@ -413,11 +471,15 @@ a {
     align-items: center;
     background-color: var(--darkgray);
     width: 100vw;
+    min-height: 12vw;
     padding: 1vw 0;
   }
   .nav img {
     margin-right: 0vw;
     height: 10vw;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
   }
   .nav section {
     display: flex;
@@ -427,26 +489,11 @@ a {
     height: 4vw;
   }
   .nav section a {
+    display: none;
     color: var(--cream);
     font-size: 3.2vw;
     position: relative;
     transition: 0.2s all;
-  }
-  .nav section a:after {
-    content: "";
-    width: 0%;
-    background-color: black;
-    position: absolute;
-    top: 6.3vw;
-    left: 0;
-    height: 0.1vw;
-    transition: 0.2s all;
-  }
-  .nav section a:hover {
-    color: var(--cream);
-  }
-  .nav section a:hover:after {
-    width: 90%;
   }
   .nav .dropdown {
     display: flex;
@@ -458,13 +505,7 @@ a {
     margin-right: 12vw;
   }
   .nav .dropdown img {
-    height: 7vw;
-    transition: 0.2s all;
-    filter: invert(180);
-  }
-  .nav .dropdown img:hover {
-    cursor: pointer;
-    filter: invert(0);
+    display: none;
   }
   .nav .dropdownextended {
     display: flex;
