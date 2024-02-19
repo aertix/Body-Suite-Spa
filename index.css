@@ -165,9 +165,10 @@ a {
   flex-direction: column;
   width: 100vw;
   height: 52vw;
-  background: url(../media/heroimage.jpg);
+  background: url(../media/heroimage.png);
   background-size: cover;
   background-attachment: fixed;
+  background-color: black;
 }
 .hero div {
   display: flex;
@@ -916,6 +917,41 @@ a {
   padding-right: 25vw;
   border: 5px solid black;
   margin-top: 1vw;
+}
+
+.reviews {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 40vw;
+}
+.reviews div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding: 0 8vw;
+}
+.reviews div h1 {
+  font-size: 3vw;
+  text-align: center;
+}
+.reviews div button {
+  outline: none;
+  border: 1px solid black;
+  color: var(--darkgray);
+  border-radius: 100vw;
+  font-size: 2vw;
+  padding: 0 1vw;
+  padding-top: 0.6vw;
+}
+.reviews div button:hover {
+  cursor: pointer;
+  background-color: var(--darkgray);
+  color: var(--cream);
 }
 
 html {

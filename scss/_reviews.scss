@@ -1,0 +1,36 @@
+.reviews{
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    height:40vw;
+
+    div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:50%;
+        height: 100%;
+        padding:0 8vw;
+        h1{
+            font-size: 3vw;
+            text-align: center;
+        }
+        button{
+            outline:none;
+            border:1px solid black;
+            color:var(--darkgray);
+            border-radius:100vw;
+            font-size:2vw;
+            padding: 0 1vw;
+            padding-top:.6vw;
+            &:hover{
+                cursor:pointer;
+                background-color:var(--darkgray);
+                color:var(--cream);
+            }
+        }
+
+    }
+}
