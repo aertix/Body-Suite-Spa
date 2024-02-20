@@ -37,3 +37,23 @@
         }
     }
 }
+
+@media(max-width:500px){
+    .footer{
+        flex-direction: column;
+        padding:5vw 2vw;
+       
+        div:nth-child(2){
+            display:none;
+        }
+        div{
+            width:100vw;
+            h3{
+                font-size:8vw;
+            }
+            a{
+                font-size: 6vw;
+            }
+        }
+    }
+}

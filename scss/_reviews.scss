@@ -4,7 +4,12 @@
     justify-content: center;
     flex-direction:row;
     height:40vw;
-
+    section{
+        height:100%;
+        width:50%;
+        justify-content: center;
+        align-items: center;
+    }
     div{
         display:flex;
         justify-content: center;
@@ -12,7 +17,7 @@
         flex-direction: column;
         width:50%;
         height: 100%;
-        padding:0 8vw;
+        padding:0 0vw;
         h1{
             font-size: 3vw;
             text-align: center;
@@ -32,5 +37,51 @@
             }
         }
 
+    }
+}
+
+@media(max-width:500px){
+    .reviews{
+        width:100vw;
+        display:flex;
+        justify-content: center;
+        flex-direction:column-reverse;
+        height:120vw;
+        section{
+            height:100%;
+            width:80%;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width:80%;
+            height: 100%;
+            padding:0 8vw;
+            h1{
+                font-size: 7vw;
+                text-align: center;
+            }
+            button{
+                outline:none;
+                border:1px solid black;
+                color:var(--darkgray);
+                border-radius:100vw;
+                font-size:2vw;
+                padding: 0 1vw;
+                padding-top:.6vw;
+                &:hover{
+                    cursor:pointer;
+                    background-color:var(--darkgray);
+                    color:var(--cream);
+                }
+            }
+            iframe{
+                width:100%;
+            }
+        }
     }
 }

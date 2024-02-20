@@ -160,6 +160,24 @@ a {
   color: var(--darkgray);
 }
 
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    padding: 5vw 2vw;
+  }
+  .footer div:nth-child(2) {
+    display: none;
+  }
+  .footer div {
+    width: 100vw;
+  }
+  .footer div h3 {
+    font-size: 8vw;
+  }
+  .footer div a {
+    font-size: 6vw;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -926,6 +944,12 @@ a {
   flex-direction: row;
   height: 40vw;
 }
+.reviews section {
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
 .reviews div {
   display: flex;
   justify-content: center;
@@ -933,7 +957,7 @@ a {
   flex-direction: column;
   width: 50%;
   height: 100%;
-  padding: 0 8vw;
+  padding: 0 0vw;
 }
 .reviews div h1 {
   font-size: 3vw;
@@ -954,6 +978,51 @@ a {
   color: var(--cream);
 }
 
+@media (max-width: 500px) {
+  .reviews {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 120vw;
+  }
+  .reviews section {
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding: 0 8vw;
+  }
+  .reviews div h1 {
+    font-size: 7vw;
+    text-align: center;
+  }
+  .reviews div button {
+    outline: none;
+    border: 1px solid black;
+    color: var(--darkgray);
+    border-radius: 100vw;
+    font-size: 2vw;
+    padding: 0 1vw;
+    padding-top: 0.6vw;
+  }
+  .reviews div button:hover {
+    cursor: pointer;
+    background-color: var(--darkgray);
+    color: var(--cream);
+  }
+  .reviews div iframe {
+    width: 100%;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
