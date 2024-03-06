@@ -1,0 +1,19 @@
+.book{
+    display:flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size:3.5vw;
+    }
+}
+
+@media(max-width:500px){
+    .book{
+        h1{
+            font-size:8vw;
+        }
+    }
+
+}
