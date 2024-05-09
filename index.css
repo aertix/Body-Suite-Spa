@@ -1030,8 +1030,9 @@ a {
     border-radius: 100vw;
     font-size: 8vw;
     padding: 2vw 4vw;
-    padding-top: 3vw;
-    margin: 2vw 0;
+    padding-top: 2vw;
+    margin: 4vw 0;
+    margin-bottom: 8vw;
   }
   .reviews div button:hover {
     cursor: pointer;
@@ -1059,6 +1060,10 @@ a {
     font-size: 8vw;
   }
 }
+.giftSectionMobile {
+  display: none;
+}
+
 .gift {
   width: 100vw;
   height: auto;
@@ -1110,6 +1115,12 @@ a {
 }
 
 @media (max-width: 500px) {
+  .giftSection {
+    display: none;
+  }
+  .giftSectionMobile {
+    display: flex;
+  }
   .gift {
     width: 100vw;
     height: auto;

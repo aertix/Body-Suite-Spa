@@ -1,3 +1,10 @@
+.giftSection{
+
+}
+.giftSectionMobile{
+display:none;
+}
+
 .gift{
  width:100vw;
  height:auto;
@@ -51,6 +58,12 @@
 }
 
 @media(max-width:500px){
+    .giftSection{
+        display:none;
+    }
+    .giftSectionMobile{
+        display:flex;
+    }
     .gift{
         width:100vw;
         height:auto;
@@ -103,6 +116,5 @@
            }
        }
        }
-       
-       
+
 }
