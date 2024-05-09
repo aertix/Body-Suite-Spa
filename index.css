@@ -1097,7 +1097,7 @@ a {
   width: 100%;
   animation: 15s slide2 infinite linear;
 }
-@keyframes slide {
+@keyframes slide2 {
   0% {
     left: 0%;
   }
