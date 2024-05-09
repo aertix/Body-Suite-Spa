@@ -14,22 +14,25 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="js/AOS.js"></script>
     <script defer src="js/modal.js"></script>
+    <script>
+        $(function () {
+            $("#navbar-placeholder").load("comps/nav.html");
+        });
+    </script>
 
 
 </head>
 
 <body>
-
+  
     <section class="hero">
-        <div>
-            <script>
-                $(function () {
-                    $("#navbar-placeholder").load("comps/nav.html");
-                });
-            </script>
-            <div id="navbar-placeholder"></div>
+        <div id="navbar-placeholder"></div>
+        <div class="innerHero">
+
+   
             <h1 data-aos="zoom-in-up">Body Suite Spa</h1>
             <h2 data-aos="zoom-in-up">Health and Beauty at it's Best</h2>
+            <a href="../comps/gift.html">25% Off All Gift Cards!</a>
 
         </div>
     </section>

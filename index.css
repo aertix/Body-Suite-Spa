@@ -188,19 +188,33 @@ a {
   background-attachment: fixed;
   background-color: black;
 }
-.hero div {
+
+.innerHero {
   display: flex;
   flex-direction: column;
   height: 62%;
   margin-bottom: 4vw;
+  justify-content: center;
+  align-items: center;
 }
-.hero div h1 {
+.innerHero h1 {
   font-size: 5vw;
   color: var(--cream);
+  margin-top: 13vw;
 }
-.hero div h2 {
+.innerHero h2 {
   color: var(--cream);
   font-size: 2vw;
+}
+.innerHero a {
+  outline: none;
+  background-color: var(--cream);
+  padding: 1vw;
+  font-family: title;
+  color: var(--darkgary);
+  border: var(--darkgray) 1px solid;
+  border-radius: 2vw;
+  margin-top: 2vw;
 }
 
 @media (max-width: 500px) {
@@ -212,21 +226,28 @@ a {
     background-size: cover;
     background-attachment: fixed;
   }
-  .hero div {
+  .innerHero {
     display: flex;
     flex-direction: column;
     height: 65%;
     margin-bottom: 4vw;
+    justify-content: center;
+    align-items: center;
   }
-  .hero div h1 {
+  .innerHero h1 {
     font-size: 12vw;
     text-align: center;
     color: var(--cream);
+    margin-top: 10vw;
   }
-  .hero div h2 {
+  .innerHero h2 {
     color: var(--cream);
     font-size: 6vw;
     text-align: center;
+  }
+  .innerHero a {
+    outline: var(--darkgray);
+    background-color: var(--cream);
   }
 }
 :root {
@@ -320,7 +341,6 @@ a {
 .nav section {
   display: flex;
   flex-direction: row;
-  gap: 1vw;
   align-items: center;
   height: 4vw;
 }
@@ -329,22 +349,14 @@ a {
   font-size: 1.2vw;
   position: relative;
   transition: 0.2s all;
-}
-.nav section a:after {
-  content: "";
-  width: 0%;
-  background-color: black;
-  position: absolute;
-  top: 1.3vw;
-  left: 0;
-  height: 0.1vw;
-  transition: 0.2s all;
+  width: auto;
+  flex-shrink: 0;
+  padding: 0.1vw 0.5vw;
 }
 .nav section a:hover {
-  color: var(--cream);
-}
-.nav section a:hover:after {
-  width: 90%;
+  color: var(--darkgray);
+  border-radius: 1vw;
+  background-color: var(--cream);
 }
 .nav .dropdown {
   display: flex;
@@ -353,6 +365,7 @@ a {
   gap: 0;
   width: 6vw;
   margin: 0;
+  cursor: pointer;
 }
 .nav .dropdown img {
   height: 2vw;
@@ -379,8 +392,8 @@ a {
 }
 .nav .dropdownextended a {
   text-decoration: none;
-  font-size: 0.7vw;
-  padding: 0.1vw 0;
+  font-size: 1.2vw;
+  padding: 0.1vw 1vw;
   margin: 0;
 }
 .nav button {
@@ -957,9 +970,11 @@ a {
   flex-direction: column;
   width: 50%;
   height: 100%;
-  padding: 0 0vw;
+  padding: 0vw 0vw;
+  border-radius: 10vw;
 }
 .reviews div h1 {
+  width: 70%;
   font-size: 3vw;
   text-align: center;
 }
@@ -985,6 +1000,7 @@ a {
     justify-content: center;
     flex-direction: column-reverse;
     height: 120vw;
+    margin-bottom: 4vw;
   }
   .reviews section {
     height: 100%;
@@ -1010,9 +1026,10 @@ a {
     border: 1px solid black;
     color: var(--darkgray);
     border-radius: 100vw;
-    font-size: 2vw;
-    padding: 0 1vw;
-    padding-top: 0.6vw;
+    font-size: 8vw;
+    padding: 2vw 4vw;
+    padding-top: 3vw;
+    margin: 2vw 0;
   }
   .reviews div button:hover {
     cursor: pointer;
@@ -1037,6 +1054,108 @@ a {
 @media (max-width: 500px) {
   .book h1 {
     font-size: 8vw;
+  }
+}
+.gift {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.gift h1 {
+  font-size: 4vw;
+  width: 80vw;
+  padding-top: 2vw;
+  font-family: title;
+}
+.gift h2 {
+  font-size: 2vw;
+  font-family: title;
+  padding-bottom: 1vw;
+}
+.gift a {
+  cursor: pointer;
+}
+.gift a img {
+  height: 5vw;
+}
+.gift div {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10vw;
+}
+.gift div img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: 15s slide2 infinite linear;
+}
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+@media (max-width: 500px) {
+  .gift {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .gift h1 {
+    font-size: 8vw;
+    width: 95vw;
+    padding-top: 2vw;
+    font-family: title;
+  }
+  .gift h2 {
+    font-size: 5vw;
+    font-family: title;
+    padding-bottom: 1vw;
+  }
+  .gift a {
+    cursor: pointer;
+  }
+  .gift a img {
+    height: 15vw;
+  }
+  .gift div {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10vw;
+  }
+  .gift div img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60vw;
+    width: 200%;
+    animation: 15s slide2 infinite linear;
+  }
+  @keyframes slide2 {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: -200%;
+    }
   }
 }
 html {

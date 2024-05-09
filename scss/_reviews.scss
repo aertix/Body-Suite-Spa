@@ -17,8 +17,10 @@
         flex-direction: column;
         width:50%;
         height: 100%;
-        padding:0 0vw;
+        padding:0vw 0vw;
+        border-radius:10vw;
         h1{
+            width:70%;
             font-size: 3vw;
             text-align: center;
         }
@@ -47,6 +49,7 @@
         justify-content: center;
         flex-direction:column-reverse;
         height:120vw;
+        margin-bottom:4vw;
         section{
             height:100%;
             width:80%;
@@ -70,9 +73,10 @@
                 border:1px solid black;
                 color:var(--darkgray);
                 border-radius:100vw;
-                font-size:2vw;
-                padding: 0 1vw;
-                padding-top:.6vw;
+                font-size:8vw;
+                padding: 2vw 4vw;
+                padding-top:3vw;
+                margin:2vw 0;
                 &:hover{
                     cursor:pointer;
                     background-color:var(--darkgray);

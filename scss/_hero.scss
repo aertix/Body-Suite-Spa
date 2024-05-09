@@ -7,24 +7,35 @@
     background-size: cover;
     background-attachment: fixed;
     background-color: black;
-    div {
-        display: flex;
-        flex-direction: column;
-        height: 62%;
-        margin-bottom: 4vw;
+}
+.innerHero{
+    display: flex;
+    flex-direction: column;
+    height: 62%;
+    margin-bottom: 4vw;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 5vw;
+        color: var(--cream);
+        margin-top:13vw;
+    }
 
-        h1 {
-            font-size: 5vw;
-            color: var(--cream);
-        }
-
-        h2 {
-            color: var(--cream);
-            font-size: 2vw;
-        }
+    h2 {
+        color: var(--cream);
+        font-size: 2vw;
+    }
+    a{
+        outline:none;
+        background-color:var(--cream);
+        padding:1vw;
+        font-family:title;
+        color:var(--darkgary);
+        border:var(--darkgray) 1px solid;
+        border-radius:2vw;
+        margin-top:2vw;
     }
 }
-
 @media(max-width:500px) {
     .hero {
         display: flex;
@@ -33,24 +44,29 @@
         height: 100vh;
         background-size: cover;
         background-attachment: fixed;
+    }
+    .innerHero{
+        display: flex;
+        flex-direction: column;
+        height: 65%;
+        margin-bottom: 4vw;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 12vw;
+            text-align: center;
+            color: var(--cream);
+            margin-top:10vw;
+        }
 
-        div {
-            display: flex;
-            flex-direction: column;
-            height: 65%;
-            margin-bottom: 4vw;
-
-            h1 {
-                font-size: 12vw;
-                text-align: center;
-                color: var(--cream);
-            }
-
-            h2 {
-                color: var(--cream);
-                font-size: 6vw;
-                text-align: center;
-            }
+        h2 {
+            color: var(--cream);
+            font-size: 6vw;
+            text-align: center;
+        }
+        a{
+            outline:var(--darkgray);
+            background-color:var(--cream);
         }
     }
 }
