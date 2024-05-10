@@ -41,7 +41,7 @@
 @media(max-width:500px){
     .footer{
         flex-direction: column;
-        padding:5vw 2vw;
+        padding:5vw 4vw;
        
         div:nth-child(2){
             display:none;
@@ -49,10 +49,10 @@
         div{
             width:100vw;
             h3{
-                font-size:8vw;
+                font-size:5vw;
             }
             a{
-                font-size: 6vw;
+                font-size: 3vw;
             }
         }
     }

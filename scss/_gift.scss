@@ -5,6 +5,22 @@
 display:none;
 }
 
+.giftReviews{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    h1{
+        font-size:4vw;
+    }
+    div{
+        width:80%;
+    }
+}
+.giftBTN{
+    background-color: var(--darkgray);
+    padding:.5vw 2vw;
+    padding-top:1vw;
+}
 .gift{
  width:100vw;
  height:auto;
@@ -14,8 +30,8 @@ display:none;
  flex-direction: column;
  text-align: center;
  h1{
-    font-size:4vw;
-    width:80vw;
+    font-size:3.5vw;
+    width:90vw;
     padding-top:2vw;
     font-family:title;
  }
@@ -26,8 +42,17 @@ display:none;
  }
  a{
     cursor: pointer;
+ 
+
+    color:var(--cream);
+
+    border-radius:2vw;
+    font-size:2.2vw;
+    font-family:title;
     img{
         height:5vw;
+        
+        color:var(--cream);
     }
 
  }
@@ -35,6 +60,8 @@ display:none;
     display:flex;
     flex-direction:row;
     width:70%;
+    margin-top:2vw;
+    margin-bottom:4vw;
     position:relative;
     overflow:hidden;
     border-radius:10vw;
@@ -77,14 +104,22 @@ display:none;
            width:95vw;
            padding-top:2vw;
            font-family:title;
+           line-height:10vw;
+           margin-top:4vw;
         }
         h2{
            font-size:5vw;
            font-family:title;
            padding-bottom:1vw;
+           margin: 2vw 0;
         }
         a{
            cursor: pointer;
+           font-size:8vw;
+           padding:0 4vw;
+           padding-top:2vw;
+           border-radius:20vw;
+
            img{
                height:15vw;
            }
@@ -105,6 +140,9 @@ display:none;
                width:200%;
                animation: 15s slide2 infinite linear;
            }
+        }
+        section{
+            
         }
         @keyframes slide2 {
            0% {

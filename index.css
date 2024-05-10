@@ -163,7 +163,7 @@ a {
 @media (max-width: 500px) {
   .footer {
     flex-direction: column;
-    padding: 5vw 2vw;
+    padding: 5vw 4vw;
   }
   .footer div:nth-child(2) {
     display: none;
@@ -172,10 +172,10 @@ a {
     width: 100vw;
   }
   .footer div h3 {
-    font-size: 8vw;
+    font-size: 5vw;
   }
   .footer div a {
-    font-size: 6vw;
+    font-size: 3vw;
   }
 }
 .hero {
@@ -209,7 +209,9 @@ a {
 .innerHero a {
   outline: none;
   background-color: var(--cream);
-  padding: 1vw;
+  padding: 0 2vw;
+  padding-top: 1vw;
+  padding-bottom: 0.7vw;
   font-family: title;
   color: var(--darkgary);
   border: var(--darkgray) 1px solid;
@@ -1064,6 +1066,24 @@ a {
   display: none;
 }
 
+.giftReviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.giftReviews h1 {
+  font-size: 4vw;
+}
+.giftReviews div {
+  width: 80%;
+}
+
+.giftBTN {
+  background-color: var(--darkgray);
+  padding: 0.5vw 2vw;
+  padding-top: 1vw;
+}
+
 .gift {
   width: 100vw;
   height: auto;
@@ -1074,8 +1094,8 @@ a {
   text-align: center;
 }
 .gift h1 {
-  font-size: 4vw;
-  width: 80vw;
+  font-size: 3.5vw;
+  width: 90vw;
   padding-top: 2vw;
   font-family: title;
 }
@@ -1086,14 +1106,21 @@ a {
 }
 .gift a {
   cursor: pointer;
+  color: var(--cream);
+  border-radius: 2vw;
+  font-size: 2.2vw;
+  font-family: title;
 }
 .gift a img {
   height: 5vw;
+  color: var(--cream);
 }
 .gift div {
   display: flex;
   flex-direction: row;
   width: 70%;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
   position: relative;
   overflow: hidden;
   border-radius: 10vw;
@@ -1135,14 +1162,21 @@ a {
     width: 95vw;
     padding-top: 2vw;
     font-family: title;
+    line-height: 10vw;
+    margin-top: 4vw;
   }
   .gift h2 {
     font-size: 5vw;
     font-family: title;
     padding-bottom: 1vw;
+    margin: 2vw 0;
   }
   .gift a {
     cursor: pointer;
+    font-size: 8vw;
+    padding: 0 4vw;
+    padding-top: 2vw;
+    border-radius: 20vw;
   }
   .gift a img {
     height: 15vw;

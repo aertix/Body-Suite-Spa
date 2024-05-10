@@ -28,7 +28,9 @@
     a{
         outline:none;
         background-color:var(--cream);
-        padding:1vw;
+        padding:0 2vw;
+        padding-top:1vw;
+        padding-bottom:.7vw;
         font-family:title;
         color:var(--darkgary);
         border:var(--darkgray) 1px solid;
